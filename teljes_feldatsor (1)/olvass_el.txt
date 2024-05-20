@@ -1,0 +1,1 @@
+Az api könyvtárban és az angularos könyvtárakban futtatni kell parancssorból az npm i parancsot, ami feltelepíti a node_modules-t.

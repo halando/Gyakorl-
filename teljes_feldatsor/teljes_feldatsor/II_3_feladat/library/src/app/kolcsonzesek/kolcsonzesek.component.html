@@ -1,0 +1,53 @@
+<div class="content">
+    <div class="row header">
+        <div class="col">
+            <p>Író</p>
+        </div>
+        <div class="col">
+            <p>Műfaj</p>
+            </div>  
+        <div class="col">
+            <p>Cím</p>
+            </div>  
+        <div class="col">
+            <p>Mentés</p>
+            </div>  
+        <div class="col">
+            <p>Törlés</p>
+            </div>    
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" name ="ujIro" [(ngModel)]="ujIro">
+        </div>
+        <div class="col">
+            <input type="text" name="ujMufaj" [(ngModel)]="ujMufaj">
+        </div>
+        <div class="col">
+            <input type="text" name="ujCim" [(ngModel)]="ujCim">
+        </div>
+        <div class="col button">
+            <p (click)="mentes()">Mentés</p>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+
+    <div class="row" *ngFor="let k of kolcsonzesek; let i = index" >
+        <div class="col">
+        <input type="text" name="iro" [(ngModel)]="k.iro">
+    </div>
+        <div class="col">
+        <input type="text" name="mufaj" [(ngModel)]="k.mufaj">
+    </div>
+        <div class="col">
+        <input type="text" name="cim" [(ngModel)]="k.cim">
+    </div>
+    <div class="col button">
+        <p (click)="javitas(i)">Mentés</p>
+        </div>  
+    <div class="col button">
+        <p (click)="torles(i)">Törlés</p>
+        </div>  
+    </div>
+</div>

@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    min-width: 400px;
+    /* a minimális szélesség 400 pixel*/
+    background: url("assets/img/bg.jpg");
+    /* a háttérkép beállítása */
+    background-size: cover;
+    /* ez biztosítja hogy kitöltse az egész hátteret */
+}

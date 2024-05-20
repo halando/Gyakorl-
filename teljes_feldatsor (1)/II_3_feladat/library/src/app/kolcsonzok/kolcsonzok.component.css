@@ -1,0 +1,51 @@
+h1 {
+    font-family: "Roboto", sans-serif;
+    /* ez nem volt a feladatban de szerintem jobban néz ki ezzel a betűtípussal */
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    /* fehér betűszín */
+    width: 100%;
+    /* teljes szélesseg */
+    margin-top: 2rem;
+    /* a margó beállítása */
+    font-size: 21vh;
+    /* a 20rem helyett ezt adtam meg mert a 20rem -el ronda */
+    background-color: rgb(161, 211, 54, 60%);
+    /*háttérszín*/
+    text-align: center;
+    /* a szöveg középre igazítása */
+}
+
+.container {
+    background-color: rgba(236, 12, 12, 0.6);
+    border-radius: 2rem;
+}
+
+.content {
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.birthdate {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.button p {
+    display: inline-block;
+    padding: 0rem 1rem;
+    background-color: #D68910;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

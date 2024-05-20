@@ -1,0 +1,29 @@
+<h1>Library</h1>
+<div class="container">
+    <div class="content">
+        <div *ngFor="let kolcsonz of kolcsonzok" class="row">
+            <!-- ngFor-al végigmegyünk a kolcsonzok tömbön és a kolcsonz változó tartalmazza a sorokat -->
+            <div class="col-sm-12 col-lg-4">
+                <!-- bootsrap-al reszponzívvá tesszük -->
+                <div class="name">{{kolcsonz.nev}}</div>
+                <!-- kiírjuk a nevet -->
+        </div>
+        <div class="col-sm-6 col-lg-4 text-center">
+            <!-- bootsrap-al reszponzívvá tesszük -->
+            <div class="birthdate">({{ kolcsonz.szulIdo | date: 'yyyy-MM-dd' }})</div>
+            <!-- kiírjuk a szulIdot és a date pipe segítségével formázzuk -->
+        </div>
+        <div class="col-sm-6 col-lg-4 text-end">
+            <!-- bootsrap-al reszponzívvá tesszük -->
+            <div class="button">
+                <p (click)="kolcsonzesek(kolcsonz.id)">Kölcsönzések</p>
+            </div>
+        </div>
+        <div class="row d-none" id="toggle{{kolcsonz.id}}">
+            <div *ngIf="visible">
+            <app-kolcsonzesek [id]="kolcsonz.id"></app-kolcsonzesek>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
